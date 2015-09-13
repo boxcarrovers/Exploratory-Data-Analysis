@@ -1,0 +1,5 @@
+png (file = 'plot1.png')
+jmtest <- hist(jmfinaldata$Global_active_power)
+plot(jmtest, col = 'red', ann = FALSE)
+title (main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)', ylab = 'Frequency')
+dev.off()

@@ -1,0 +1,6 @@
+png (file = 'plot3.png')
+plot(jmfinaldata$DT1,jmfinaldata$Sub_metering_1,type = 'b', col = 'black', ann= FALSE, ylim = c(0,30), ylab ='Energy sub-metering')
+lines (jmfinaldata$DT1, jmfinaldata$Sub_metering_2, type = 'b',col = 'red')
+lines(jmfinaldata$DT1, jmfinaldata$Sub_metering_3, type = 'b', col = 'blue')
+legend('topright', c('submetering1','submetering2', 'submetering3'),col = c('black','red','blue'),lty = 1)
+dev.off()
